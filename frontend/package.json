@@ -1,0 +1,11 @@
+{
+  "name": "falacia_del_dia",
+  "version": "1.0.0",
+  "description": "Esta web esta orientada en brindar una falacia diferente cada dia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
