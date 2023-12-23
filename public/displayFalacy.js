@@ -1,4 +1,4 @@
-const falacy_frase = document.getElementById("falacy_frase");
+const falacy_frase = document.getElementById("falacy_phrase");
 const falacy_definition = document.getElementById("falacy_definition");
 const falacy_ejemplification = document.getElementById("falacy_ejemplification");
 

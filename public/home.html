@@ -6,12 +6,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="falacy_frase" class="texto_imagen">TEXTO</div>
-    <h2 id="falacy_definition" class="texto_imagen">Definicion: </h2>
-    <h2 id="falacy_ejemplification">Ejemplificacion: </h2>
+    <!-- Contenedor principal -->
+    <div id="background">
+        <div id="blur_effect"></div>
+    </div>
 
-    <div></div>
+    <!-- Encabezados y texto relacionado con la falacia -->
+    <h4 class="falacy-of-the-day-indicator">FALACIA DEL DÍA:</h4>
+    <div class="text-image-container">
+        <h1 id="falacy_phrase">Urgenism</h1>
+    </div>
+    <h4 class="part-text">DEFINICIÓN:</h4>
+    <p class="large-text" id="falacy_definition">...</p>
+    <h4 class="part-text">EJEMPLIFICACIÓN:</h4>
+    <p class="large-text" id="falacy_ejemplification">...</p>
+
+    <!-- Barra de informacion abajo -->
+
+    <div class="bottom-bar">
+        <a href="https://github.com/pedrofmu" target="_blank"> <img src="assets/restart-square-svgrepo-com.svg" alt="" id="icon_image"> </a>
+        <a href="https://github.com/pedrofmu"  style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;"target="_blank"> <img src="assets/user-hand-up-svgrepo-com.svg" alt="" id="icon_image"> </a>
+    </div>
+
+    <!-- Script para mostrar la falacia -->
     <script src="displayFalacy.js"></script>
 </body>
 </html>
+
 
