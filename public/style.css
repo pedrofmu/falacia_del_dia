@@ -6,7 +6,6 @@ body {
     padding-left: 3%;
     background-color: #1F1F1F;
     font-family: 'Nunito', sans-serif;
-    color: #ECE5D3;
 }
 
 /* Estilos del contenedor de texto e imagen */
@@ -19,13 +18,41 @@ body {
 .text-image-container h1 {
     margin: 0;
     font-size: 95px;
-    color: rgba(225, 225, 225, 0.01);
+    color: rgba(225, 225, 225, 0.01); /* Color de texto transparente */
     background-image: url("assets/wallpaperjpg");
     background-repeat: repeat;
     background-clip: text;
     text-transform: uppercase;
     font-weight: 900;
 }
+
+
+.text-image-container span { 
+    display: inline-block;
+}
+
+@supports (-moz-appearance:none) {
+    /* Estilos o animaciones específicas para Firefox */
+    .text-image-container span {
+        animation: waviy 1s;
+        animation-delay: calc(.05s * var(--i));
+    }
+}
+
+span.special-space {
+    display: inline-block;
+    width: 10em; /* Ajusta el ancho según sea necesario */
+    visibility: hidden;
+}
+
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-25px)
+    }
+  }
 
 /* Estilos de los encabezados y texto */
 .falacy-of-the-day-indicator,
@@ -72,10 +99,25 @@ body {
     right: 0;
     width: 350px;
     height: 350px;
-    opacity: 0.5;
+    opacity: 0.6;
     background-color: #B9B09F;
-    filter: blur(2000px);
+    filter: blur(100px);
+    animation: infinite breath_effect 15s;
 }
+
+@keyframes breath_effect {
+    0%, 50%, 100% {
+        background-color: #B9B09F;
+        width: 350px;
+        height: 350px;
+    }
+    25%, 75% {
+        background-color: #ECE5D3;
+        width: 370px;
+        height: 370px;
+    }
+}
+
 
 .bottom-bar{
   width: 95%;
@@ -87,6 +129,7 @@ body {
   align-items: center;
   justify-content: center;
   border-style: solid;
+  color: #B9B09F;
   border-width: 3px 0px 0px 0px;
 }
 

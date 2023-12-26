@@ -9,8 +9,20 @@ fetch('/api/')
         }
         return response.json();
     })
-    .then(data => {
-        falacy_frase.innerHTML = data.frase.toUpperCase();
+    .then(data => {    
+        i = 0;
+        let falacyArray = data.frase.split(''); 
+        falacyArray.forEach(element => {
+            let leter = document.createElement("span");
+            if (element != " "){
+                leter.innerHTML = element.toUpperCase(); 
+            }else{
+                leter.innerHTML = "&middot;";
+            }
+            leter.style = "--i:" + i;
+            i++;
+            falacy_frase.appendChild(leter); // Agregar cada h1 a falacy_frase
+        });
         falacy_definition.innerHTML = data.definicion;
         falacy_ejemplification.innerHTML = data.ejemplificacion;
     })
