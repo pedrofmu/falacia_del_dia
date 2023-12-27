@@ -1,0 +1,45 @@
+@media (min-aspect-ratio: 1.01/1) {
+  .text-image-container h1 {
+    margin: 0;
+    font-size: 95px;
+  }
+
+  /* Estilos de los encabezados y texto */
+  .falacy-of-the-day-indicator,
+  .part-text {
+    padding-top: 35px;
+    font-size: 22px; /* Puedes cambiar esto según tus preferencias */
+  }
+
+  .large-text {
+    padding-top: 0; /* Ajuste del padding-top a 0 */
+    font-size: 20px;
+  }
+
+  .large-text::before {
+    content: "\00B7";
+    margin-right: 5px;
+  }
+
+  #blur_effect {
+    z-index: -10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 350px;
+  }
+
+  .bottom-bar {
+    width: 95%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%; /* Posición horizontal en el centro */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+  }
+
+  .icon_image {
+    width: 50px;
+    margin: 10px 10px;
+  }
+}
