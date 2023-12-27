@@ -42,5 +42,22 @@ app.get('/api/', async(request, response) => {
     }
 });
 
+app.get('/api/getanotherfalacy', async(request, response) => {
+    try {
+        falacyManager.newFalacy().then((falacy)=>{
+            const data = {
+                frase: falacy.frase,
+                definicion: falacy.definicion,
+                ejemplificacion: falacy.ejemplificacion,
+            }
+
+            response.send(data);
+        });
+    } catch (err) {
+        console.error("Error obteniendo la falacia", err);
+        response.status(500).send("Error obteniendo la falacia");
+    }
+});
+
 app.listen(process.env.PORT || 3000, () => console.log(`App disponible en http://localhost:3000`));
 
