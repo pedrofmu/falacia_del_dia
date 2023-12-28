@@ -21,6 +21,7 @@ app.get('/', async (request, response) => {
         const data = await fs.readFile(indexPath, 'utf8');
         // Enviar el contenido del archivo como respuesta
         response.send(data);
+        console.log(request.ip, " se ha conectado a la web");
     } catch (err) {
         console.error("Error al leer el archivo:", err);
         response.status(500).send('Error interno del servidor');
@@ -30,11 +31,12 @@ app.get('/', async (request, response) => {
 app.get('/api/', async(request, response) => {
     try {
         const data = {
-            frase: falacyManager.currentFalacy.frase,
-            definicion: falacyManager.currentFalacy.definicion,
-            ejemplificacion: falacyManager.currentFalacy.ejemplificacion,
+            frase: falacyManager.currentFalacy.Falacia,
+            definicion: falacyManager.currentFalacy.Definicion,
+            ejemplificacion: falacyManager.currentFalacy.Ejemplificacion,
         }
 
+        console.log(request.ip, " ha hecho una peticion a la api");
         response.send(data);
     } catch (err) {
         console.error("Error obteniendo la falacia", err);
@@ -46,11 +48,12 @@ app.get('/api/getanotherfalacy', async(request, response) => {
     try {
         falacyManager.newFalacy().then((falacy)=>{
             const data = {
-                frase: falacy.frase,
-                definicion: falacy.definicion,
-                ejemplificacion: falacy.ejemplificacion,
+                frase: falacy.Falacia,
+                definicion: falacy.Definicion,
+                ejemplificacion: falacy.Ejemplificacion,
             }
 
+            console.log(request.ip, " ha hecho una peticion a la api pidiendo una nueva falacia");
             response.send(data);
         });
     } catch (err) {

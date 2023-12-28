@@ -43,9 +43,13 @@ export class FalacyManager {
         });
     }
     ChangeFalacy() {
-        console.log("se cambio la falacia");
         this.newFalacy().then((falacy) => {
-            this.currentFalacy = falacy;
+            if (falacy) {
+                this.currentFalacy = falacy;
+                console.log("Se cambió la falacia a: ", this.currentFalacy);
+            }
+        }).catch((err) => {
+            console.error("Error al obtener la nueva falacia:", err);
         });
     }
 }

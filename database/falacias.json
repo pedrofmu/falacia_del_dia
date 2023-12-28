@@ -1,0 +1,22 @@
+{
+  "Ad Hominem": {
+    "Definición": "Atacar al individuo que presenta un argumento en lugar de refutar el argumento en sí mismo.",
+    "Ejemplo": "Juan afirma que el cambio climático es un problema real. Carlos responde diciendo que Juan es un aficionado y no tiene credenciales científicas, por lo tanto, su argumento es inválido."
+  },
+  "Falsa Causalidad": {
+    "Definición": "Asumir que, porque dos eventos están correlacionados, uno causa el otro.",
+    "Ejemplo": "Cada vez que Pedro lleva su amuleto de la suerte, gana en el casino. Por lo tanto, el amuleto es la razón por la que gana."
+  },
+  "Peticion de Principio": {
+    "Definición": "Circularidad en la argumentación donde se asume como verdadero lo que se intenta probar.",
+    "Ejemplo": "La Biblia es verdadera porque Dios lo dice en la Biblia misma."
+  },
+  "Falso Dilema": {
+    "Definición": "Presentar sólo dos opciones cuando en realidad existen más posibilidades.",
+    "Ejemplo": "O estás con nosotros o estás contra nosotros."
+  },
+  "Generalización Apresurada": {
+    "Definición": "Hacer una afirmación general basada en una evidencia insuficiente.",
+    "Ejemplo": "Todos los políticos son corruptos porque algunos han sido atrapados en escándalos de corrupción."
+  }
+}

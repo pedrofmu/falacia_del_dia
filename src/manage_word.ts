@@ -5,9 +5,9 @@ import { debug } from 'console';
 
 // Define una interfaz para describir la estructura de tus datos
 interface Falacia {
-  frase: string;
-  definicion: string;
-  ejemplificacion: string;
+  Falacia: string;
+  Definicion: string;
+  Ejemplificacion: string;
 }
 
 export class FalacyManager{
@@ -58,10 +58,13 @@ export class FalacyManager{
   }
 
   ChangeFalacy(): void{
-     console.log("se cambio la falacia");
-
      this.newFalacy().then((falacy) => {
+      if (falacy) {
         this.currentFalacy = falacy;
+        console.log("Se cambió la falacia a: ", this.currentFalacy);
+      }
+    }).catch((err) => {
+      console.error("Error al obtener la nueva falacia:", err);
     });
   } 
 };
