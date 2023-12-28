@@ -1,7 +1,6 @@
 import sqlite3 from 'sqlite3';
 import path from 'path';
 import cron from 'node-cron';
-import { debug } from 'console';
 
 // Define una interfaz para describir la estructura de tus datos
 interface Falacia {
@@ -61,7 +60,7 @@ export class FalacyManager{
      this.newFalacy().then((falacy) => {
       if (falacy) {
         this.currentFalacy = falacy;
-        console.log("Se cambió la falacia a: ", this.currentFalacy);
+        console.log("Se cambió la falacia a: ", this.currentFalacy.Falacia);
       }
     }).catch((err) => {
       console.error("Error al obtener la nueva falacia:", err);

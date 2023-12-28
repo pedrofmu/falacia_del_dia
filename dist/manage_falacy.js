@@ -54,4 +54,4 @@ export class FalacyManager {
     }
 }
 ;
-//# sourceMappingURL=manage_word.js.map
+//# sourceMappingURL=manage_falacy.js.map
