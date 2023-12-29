@@ -20,10 +20,12 @@ fetch("/api/")
       let leter = document.createElement("span");
       if (element != " ") {
         leter.innerHTML = element.toUpperCase();
+        leter.style.setProperty("--o", "1");
       } else {
         leter.innerHTML = "&middot;";
+        leter.style.setProperty("--o", "0");
       }
-      leter.style = "--i:" + i;
+      leter.style.setProperty("--i", i);
       i++;
       falacy_frase.appendChild(leter); // Agregar cada h1 a falacy_frase
     });

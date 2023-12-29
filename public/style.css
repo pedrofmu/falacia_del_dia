@@ -29,6 +29,7 @@ body {
 .text-image-container span {
   margin-top: 10px;
   display: inline-block;
+  opacity: calc(1 * var(--o));
 }
 
 @supports (-moz-appearance: none) {

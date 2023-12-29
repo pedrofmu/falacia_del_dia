@@ -1,4 +1,6 @@
 function getAnotherFalacy() {
+
+  document.getElementById("title-h4").innerHTML = "FALACIA: "
   fetch("/api/getanotherfalacy")
     .then((response) => {
       if (!response.ok) {
@@ -21,8 +23,10 @@ function getAnotherFalacy() {
         let letter = document.createElement("span");
         if (element != " ") {
           letter.innerHTML = element.toUpperCase();
+          letter.style.setProperty("--o", "1");
         } else {
           letter.innerHTML = "&middot;";
+          letter.style.setProperty("--o", "0");
         }
         letter.style.setProperty("--i", i);
         i++;

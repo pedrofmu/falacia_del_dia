@@ -18,5 +18,137 @@
   "Generalización Apresurada": {
     "Definición": "Hacer una afirmación general basada en una evidencia insuficiente.",
     "Ejemplo": "Todos los políticos son corruptos porque algunos han sido atrapados en escándalos de corrupción."
+  },
+  "Argumentum ad Populum": {
+    "Definición": "Considerar que algo es verdadero o válido solo porque muchas personas lo creen.",
+    "Ejemplo": "La mayoría de la gente cree en la astrología, por lo tanto, debe ser cierta."
+  },
+  "Falsa Analogía": {
+    "Definición": "Establecer una comparación entre dos cosas que, aunque parezcan similares, tienen diferencias significativas.",
+    "Ejemplo": "Comparar la mente humana con un ordenador; ambos procesan información, pero no son iguales en su funcionamiento."
+  },
+  "Hombre de Paja": {
+    "Definición": "Distorsionar o exagerar el argumento original de alguien para luego refutar esa versión distorsionada en lugar del argumento real.",
+    "Ejemplo": "El político propuso mejorar la seguridad social, y su oponente lo acusó de querer llevar al país a la bancarrota con gastos descontrolados."
+  },
+  "Pendiente Resbaladiza": {
+    "Definición": "Argumentar que un evento conducirá inevitablemente a una serie de eventos catastróficos, sin pruebas suficientes.",
+    "Ejemplo": "Si se legaliza el matrimonio entre personas del mismo sexo, el siguiente paso será legalizar la poligamia, la pedofilia y otras prácticas inmorales."
+  },
+  "Falsa Autoridad": {
+    "Definición": "Aceptar una afirmación solo porque viene de una figura de autoridad, aunque esa persona no sea experta en el tema.",
+    "Ejemplo": "El actor famoso dice que usar ese producto para bajar de peso es efectivo, por lo que debe ser verdad."
+  },
+  "Círculo Vicioso": {
+    "Definición": "Presentar una afirmación que en realidad no ofrece evidencia, solo repite la proposición.",
+    "Ejemplo": "La razón por la que este libro es bueno es que tiene una excelente reputación."
+  },
+  "Evidencia Anecdótica": {
+    "Definición": "Basar un argumento en anécdotas personales o casos individuales en lugar de pruebas sólidas.",
+    "Ejemplo": "Creer que fumar no es dañino para la salud porque tu abuelo fumó toda su vida y vivió hasta los 90 años."
+  },
+  "Falacia del Nirvana": {
+    "Definición": "Rechazar propuestas realistas o soluciones prácticas porque no son perfectas.",
+    "Ejemplo": "Rechazar un plan económico porque no resuelve todos los problemas financieros del país."
+  },
+  "Apelación a la Ignorancia": {
+    "Definición": "Argumentar que algo es verdadero solo porque no se ha demostrado que sea falso, o viceversa.",
+    "Ejemplo": "No podemos probar que los extraterrestres no existen, por lo tanto, deben estar entre nosotros."
+  },
+  "Falacia de Composición": {
+    "Definición": "Suponer que lo que es cierto para las partes individuales también es cierto para el conjunto.",
+    "Ejemplo": "Cada jugador de este equipo es excelente, por lo tanto, el equipo en su conjunto es imbatible."
+  },
+  "Falacia de División": {
+    "Definición": "Suponer que lo que es cierto para el conjunto también es cierto para las partes individuales.",
+    "Ejemplo": "Este automóvil es rápido, por lo tanto, cada una de sus partes debe ser rápida."
+  },
+  "Media Verdad": {
+    "Definición": "Presentar solo parte de la información para respaldar una afirmación, ignorando otros datos relevantes.",
+    "Ejemplo": "Decir que el producto es barato sin mencionar que su calidad es muy baja."
+  },
+  "Rueda Giratoria": {
+    "Definición": "Responder a un argumento refutando un punto anterior en lugar del argumento actual.",
+    "Ejemplo": "El político critica una ley, y su oponente le responde atacando una acción que tomó hace cinco años, evitando abordar la crítica actual."
+  },
+  "Argumento de la Naturaleza": {
+    "Definición": "Afirmar que algo es bueno o correcto porque es natural o se ajusta a la naturaleza.",
+    "Ejemplo": "Es natural que los animales se coman entre sí, por lo tanto, está bien que los humanos también lo hagan."
+  },
+  "Olvido de la Excepción": {
+    "Definición": "Generalizar una regla pero ignorar los casos excepcionales que no la cumplen.",
+    "Ejemplo": "Todos los mamíferos tienen pelo, por lo tanto, los delfines, que son mamíferos, también deben tener pelo."
+  },
+  "Afirmación del consecuente": {
+    "Definición": "Inferir incorrectamente que, dado el consecuente, el antecedente también es verdadero.",
+    "Ejemplo": "Si llueve, las calles se mojan. Las calles están mojadas, luego ha llovido."
+  },
+  "Negación del antecedente": {
+    "Definición": "Erróneamente concluir que, dado el negativo del antecedente, el consecuente también es negativo.",
+    "Ejemplo": "Si llueve, las calles se mojan. No ha llovido. Luego las calles no están mojadas."
+  },
+  "Disyunción incluyente": {
+    "Definición": "Erróneamente suponer que la inclusión de una opción excluye automáticamente la otra.",
+    "Ejemplo": "Le dije que podía comer o beber lo que quisiera. Está comiendo, luego no está bebiendo."
+  },
+  "Ad logicam": {
+    "Definición": "Concluir que un argumento es falaz porque se dedujo erróneamente, pero esto no demuestra su falsedad.",
+    "Ejemplo": "El argumento de Ana se basa en una premisa incorrecta, por lo tanto, su conclusión debe ser falsa."
+  },
+  "Ad Baculum": {
+    "Definición": "Utilizar la amenaza o la fuerza para persuadir en lugar de argumentar razonablemente.",
+    "Ejemplo": "Si no estás de acuerdo conmigo, te despediré."
+  },
+  "Reductio ad Hitlerum": {
+    "Definición": "Descartar un argumento comparándolo con Hitler o el nazismo sin justificación.",
+    "Ejemplo": "La música urbana es un veneno para la sociedad. La música clásica es peor, ya que a Hitler le gustaba."
+  },
+  "Ad ignorantiam": {
+    "Definición": "Creer que algo es verdadero porque no hay evidencia en su contra.",
+    "Ejemplo": "Las brujas existen porque nadie ha demostrado que no existan."
+  },
+  "Sofisma patético": {
+    "Definición": "Apelar a las emociones en lugar de a la razón para persuadir.",
+    "Ejemplo": "Utilizar una imagen emotiva para convencer a la audiencia."
+  },
+  "Ignoratio elenchi": {
+    "Definición": "Responder a una pregunta con un argumento que no aborda el tema planteado.",
+    "Ejemplo": "Preguntan sobre el cambio climático y la respuesta se centra en la economía."
+  },
+  "Muñeco de paja": {
+    "Definición": "Distorsionar el argumento del oponente para refutar una versión más débil y atacar esa versión en lugar del argumento real.",
+    "Ejemplo": "Exagerar la postura del oponente para ridiculizarla."
+  },
+  "Wishful thinking": {
+    "Definición": "Basarse en lo que se desea que sea verdad en lugar de lo que realmente es probable que sea verdad.",
+    "Ejemplo": "Creer que ganarás la lotería sin tener probabilidades realistas de hacerlo."
+  },
+  "Generalización precipitada": {
+    "Definición": "Hacer una generalización a partir de una muestra que no es representativa.",
+    "Ejemplo": "Ver a unos pocos estudiantes desorganizados y concluir que todos los estudiantes son desorganizados."
+  },
+  "Post Hoc ergo Propter hoc": {
+    "Definición": "Asumir que, porque un evento sigue a otro, el primero es la causa del segundo.",
+    "Ejemplo": "Tomé un medicamento y luego me curé; por lo tanto, el medicamento me curó."
+  },
+  "Petitio principii": {
+    "Definición": "Utilizar premisas que asumen la verdad de lo que se está tratando de probar.",
+    "Ejemplo": "Dios existe porque la Biblia lo dice, y sabemos que la Biblia es verdadera porque fue escrita por Dios."
+  },
+  "Ad verecundiam": {
+    "Definición": "Asumir que alguien que es experto en un campo nunca cometerá errores en ese campo.",
+    "Ejemplo": "El científico famoso afirma que esto es cierto, por lo tanto, debe ser verdad."
+  },
+  "Ad novitatem": {
+    "Definición": "Considerar que algo es mejor solo porque es nuevo.",
+    "Ejemplo": "Este teléfono es el más nuevo del mercado, por lo tanto, debe ser el mejor."
+  },
+  "Ad antiquitatem": {
+    "Definición": "Considerar que si algo se ha hecho durante mucho tiempo, es correcto o verdadero.",
+    "Ejemplo": "Nuestra familia ha celebrado esta tradición durante generaciones, por lo tanto, debe ser buena."
+  },
+  "Alegato especial": {
+    "Definición": "Cuando se sugiere que el oponente no puede comprender completamente el tema en cuestión debido a una supuesta falta de conocimiento o empatía.",
+    "Ejemplo": "No puedes entender la profundidad de este problema si no eres parte de nuestra comunidad."
   }
 }
