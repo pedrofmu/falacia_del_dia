@@ -1,25 +1,22 @@
 import express from "express";
 import fs from "fs/promises";
+import http from "http";
 import path from "path";
 import { addLog } from "./manage_log.js";
 import { FalacyManager } from "./manage_falacy.js";
 const app = express();
-// Obtener la ruta del directorio del archivo actual
-export const dirname = "/home/pedro_mint/Proyects/falacia_del_dia";
+const dirname = "/home/pedrofm/Proyects/falacia_del_dia";
 const indexPath = path.join(dirname, 'public', 'home.html');
 const falacyManager = new FalacyManager(dirname);
-// Configurar Express para servir archivos estáticos desde el directorio 'public'
 app.use(express.static(path.join(dirname, 'public')));
 app.get('/', async (request, response) => {
     try {
-        // Leer el contenido del archivo index.html de manera asíncrona
         const data = await fs.readFile(indexPath, 'utf8');
-        // Enviar el contenido del archivo como respuesta
         response.send(data);
-        addLog(path.join(dirname, 'requests.log'), request.ip + " se ha conectado a la web\n");
+        addLog(path.join(dirname, 'requests.log'), `${request.ip} se ha conectado a la web\n`);
     }
     catch (err) {
-        addLog(path.join(dirname, 'requests.log'), request.ip + " tubo un error leyendo el archivo, " + err + "\n");
+        addLog(path.join(dirname, 'requests.log'), `${request.ip} tuvo un error leyendo el archivo, ${err}\n`);
         response.status(500).send('Error interno del servidor');
     }
 });
@@ -30,11 +27,11 @@ app.get('/api/', async (request, response) => {
             definicion: falacyManager.currentFalacy.Definicion,
             ejemplificacion: falacyManager.currentFalacy.Ejemplificacion,
         };
-        addLog(path.join(dirname, 'requests.log'), request.ip + " ha hecho una peticion a la api\n");
+        addLog(path.join(dirname, 'requests.log'), `${request.ip} ha hecho una petición a la API\n`);
         response.send(data);
     }
     catch (err) {
-        addLog(path.join(dirname, 'requests.log'), request.ip + " tubo un error obteniendo una falacia, " + err + "\n");
+        addLog(path.join(dirname, 'requests.log'), `${request.ip} tuvo un error obteniendo una falacia, ${err}\n`);
         response.status(500).send("Error obteniendo la falacia");
     }
 });
@@ -46,14 +43,28 @@ app.get('/api/getanotherfalacy', async (request, response) => {
                 definicion: falacy.Definicion,
                 ejemplificacion: falacy.Ejemplificacion,
             };
-            addLog(path.join(dirname, 'requests.log'), request.ip + " ha hecho una peticion a la api pidiendo una nueva falacia\n");
+            addLog(path.join(dirname, 'requests.log'), `${request.ip} ha hecho una petición a la API pidiendo una nueva falacia\n`);
             response.send(data);
         });
     }
     catch (err) {
-        addLog(path.join(dirname, 'requests.log'), request.ip + " tubo un error obteniendo una falacia, " + err + "\n");
+        addLog(path.join(dirname, 'requests.log'), `${request.ip} tuvo un error obteniendo una falacia, ${err}\n`);
         response.status(500).send("Error obteniendo la falacia");
     }
 });
-app.listen(process.env.PORT || 3000, () => console.log(`App disponible en http://localhost:3000`));
+// Servidor HTTP
+const httpServer = http.createServer(app);
+httpServer.listen(80, () => {
+    console.log(`App disponible en http://localhost`);
+});
+// Servidor HTTPS
+//const httpsOptions = {
+//    key: fs.readFileSync('ruta_a_tu_clave_privada.key'),
+//    cert: fs.readFileSync('ruta_a_tu_certificado.crt')
+//};
+//
+//const httpsServer = https.createServer(httpsOptions, app);
+//httpsServer.listen(443, () => {
+//    console.log(`App disponible en https://localhost`);
+//});
 //# sourceMappingURL=index.js.map
